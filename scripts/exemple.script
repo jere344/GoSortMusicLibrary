@@ -1,0 +1,24 @@
+ADD FOLDER # Create a folder with only one custom tag named "GROUP"
+	CUSTOM:GROUP
+
+ADD FOLDER
+    IF (YEAR) # If the album have a year name the second folder "[YEAR]. [ALBUM]"
+        YEAR
+        ". "
+    ALBUM # Else just name it "[ALBUM]"
+
+
+
+IF (DISC) # Create a folder with only "Disc [DISC]"
+    ADD FOLDER
+    "Disc "
+    DISC
+
+
+ADD FOLDER
+    IF (TRACK)
+        TRACK
+        ". "
+    ARTIST
+    " - "
+    TITLE

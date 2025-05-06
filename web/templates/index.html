@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Sort Music Library</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sort Your Music Library</h1>
+        <form id="sortForm">
+            <label for="sourceFolder">Source Folder Path:</label>
+            <input type="text" id="sourceFolder" name="sourceFolder" required>
+
+            <label for="destinationFolder">Destination Folder Path:</label>
+            <input type="text" id="destinationFolder" name="destinationFolder" required>
+
+            <label for="fileOperationMode">File Operation:</label>
+            <select id="fileOperationMode" name="fileOperationMode">
+                <option value="preview" selected>Preview (Log Only)</option>
+                <option value="copy">Copy Files</option>
+                <option value="move">Move Files</option>
+            </select>
+
+            <label for="scriptFile">Load Script from File:</label>
+            <input type="file" id="scriptFile" name="scriptFile" accept=".js,.txt">
+
+            <label for="script">Enter Script:</label>
+            <textarea id="script" name="script" rows="10" required></textarea>
+            <button type="submit">Sort Music</button>
+        </form>
+        <div id="logContainer">
+            <h2>Execution Logs</h2>
+            <pre id="executionLogs"></pre>
+        </div>
+    </div>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
