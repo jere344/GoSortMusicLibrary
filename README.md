@@ -2,13 +2,10 @@
 
 ## Overview
 Go Sort Music UI is a user-friendly interface for the SortLibrary script, designed to help users easily sort their music libraries based on customizable parameters. This project integrates a web-based interface with the existing sorting logic, allowing for seamless interaction and execution of sorting operations.
-
-## Project Interestings files
+![image](https://github.com/user-attachments/assets/d2a5557c-4130-4906-a0b5-43f910e798e1)
 
 - **cmd/app/main.go**: Entry point of the application. Initializes the web server and sets up routes.
 - **internal/sorter/sorter.go**: Contains the core logic for sorting the music library, utilizing the existing SortLibrary code.
-- **scripts/example.script**: An example script file demonstrating how to use the SortLibrary functionality.
-- **go.mod**: Go module configuration file specifying dependencies and versioning.
 
 ## Setup Instructions
 1. **Clone the Repository**
